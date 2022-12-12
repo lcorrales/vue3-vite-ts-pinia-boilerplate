@@ -6,7 +6,7 @@ defineProps<{ msg: string }>()
   <h3>{{ msg }}</h3>
 
   <p>
-    Recommended IDE setup:
+    Recommended ss IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
     +
     <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
@@ -24,9 +24,9 @@ defineProps<{ msg: string }>()
   </p>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 a {
-  color: #42b983;
+  @apply text-lg font-light text-gray-400 p-3;
 }
 
 label {
@@ -35,7 +35,7 @@ label {
 }
 
 code {
-  background-color: #eee;
+  @apply bg-black;
   padding: 2px 4px;
   border-radius: 4px;
   color: #304455;
