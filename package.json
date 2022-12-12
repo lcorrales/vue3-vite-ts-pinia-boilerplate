@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build:dev": "vue-tsc --noEmit && vite build",
+    "build:production": "vue-tsc --noEmit && vite build",
+    "build:staging": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .ts,vue --ignore-path .gitignore .",
     "test:unit": "jest"
@@ -13,6 +15,7 @@
     "axios": "^0.24.0",
     "pinia": "^2.0.13",
     "vue": "^3.2.33",
+    "vue-query": "^1.26.0",
     "vue-router": "^4.0.14"
   },
   "devDependencies": {
