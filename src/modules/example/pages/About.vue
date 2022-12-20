@@ -19,12 +19,7 @@ export default defineComponent({
     setup() {
         const pokemon = usePokemonStore();
         const { pokemonsName } = storeToRefs(pokemon);
-
-        const { isLoading, isError, isFetching, data, error, refetch } = useQuery(
-        "todos",
-        fetcher
-        );
-
+        const { isLoading, isError, isFetching, data, error, refetch } = useQuery("todos", fetcher);
         return { pokemonsName, isLoading, isError, isFetching, data, error, refetch };
     },
 });
@@ -36,7 +31,7 @@ export default defineComponent({
     <div>
         {{ pokemonsName }}
     </div>
-    
+
     <p>
         Turn on <strong>network throttling</strong> in dev-tools and press Refetch
     </p>
